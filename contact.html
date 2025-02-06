@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Header Section -->
+     
+    <header>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or feedback, feel free to reach out!</p>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>We’d love to hear from you! If you have any questions, concerns, or suggestions about the app, please don't hesitate to reach out to us. We strive to make your movie discovery experience as smooth as possible.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <div class="container">
+            <h2>Contact Form</h2>
+            <form id="contactForm" action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript to prevent form submission from redirecting
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting and refreshing the page
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Add logic here for form data processing (e.g., sending data to a server)
+            alert(`Form Submitted! \nName: ${name} \nEmail: ${email} \nMessage: ${message}`);
+
+            // Optionally, reset the form after submission
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>

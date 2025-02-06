@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Search Movies here 👇🏻</h2>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter movie title...">
+            <button id="searchButton">Search</button>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading" style="display: none;">Loading...</div>
+        
+        <!-- Error Message -->
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+        
+        <!-- Movie Results -->
+        <div id="results"></div>
+
+        <!-- Movie Details -->
+        <div id="movieDetails"></div>
+    </div>
+
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
